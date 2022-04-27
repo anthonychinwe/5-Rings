@@ -1,0 +1,522 @@
+body {
+  background-color: #d1dee0;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: backgroundChange 5s 2;
+}
+.box {
+  background-color: #4852da;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 440px;
+  border-radius: 3px;
+}
+
+.ball1 {
+  animation: ball1 5s 2;
+}
+.ball2 {
+  animation: ball2 5s 2;
+}
+.ball3 {
+  animation: ball3 5s 2;
+}
+.ball4 {
+  animation: ball4 5s 2;
+}
+.ball5 {
+  animation: ball5 5s 2;
+}
+.floor {
+  background-color: #1aa72d;
+  height: 25px;
+  width: 40%;
+  position: relative;
+  top: 500px;
+  border-radius: 10px;
+  animation: floorGlow 5s 2;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: rgb(209, 222, 224);
+    animation-timing-function: step-end;
+  }
+  34% {
+    background: rgb(75, 75, 75);
+    animation-timing-function: step-end;
+  }
+  75% {
+    background-color: rgb(209, 222, 224);
+  }
+}
+
+@keyframes floorGlow {
+  0% {
+    background-color: #1aa72d;
+    animation-timing-function: step-end;
+  }
+  34% {
+    background-color: #7eff7e;
+    box-shadow: 0px 0px 10px #64e764, 0px 0px 20px #35ca35, 0px 0px 50px #1d9c1d;
+  }
+  70% {
+    background-color: #7eff7e;
+    box-shadow: 0px 0px 10px #64e764, 0px 0px 20px #35ca35, 0px 0px 50px #1d9c1d;
+  }
+}
+
+@keyframes ball1 {
+  10% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+    border: unset;
+  }
+  15% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+    border: unset;
+  }
+  25% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: unset;
+    border: unset;
+  }
+  30% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(0.8);
+    border: unset;
+    box-shadow: unset;
+  }
+  34% {
+    border-radius: 50%;
+    top: 170px;
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 10px rgb(24, 175, 185);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+    top: 170px;
+    transform: translateY(-150px) scale(1.2);
+  }
+  70% {
+    border-radius: 50%;
+    background-color: transparent;
+    top: 170px;
+    transform: translateY(0px) scale(1.2);
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+  }
+  75% {
+    border: unset;
+    box-shadow: unset;
+    animation-timing-function: step-end;
+  }
+  75% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1.8);
+  }
+  78% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1);
+  }
+  90% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+  }
+  94% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+  }
+}
+@keyframes ball2 {
+  10% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+    border: unset;
+  }
+  15% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+    border: unset;
+  }
+  25% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: unset;
+    border: unset;
+  }
+  30% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(0.8);
+    border: unset;
+    box-shadow: unset;
+  }
+  34% {
+    border-radius: 50%;
+    top: 170px;
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 10px rgb(24, 175, 185);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+    top: 170px;
+    transform: translate(-143px, -46px) scale(1.2);
+  }
+  70% {
+    border-radius: 50%;
+    background-color: transparent;
+    top: 170px;
+    transform: translate(0px, 0px) scale(1.2);
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+  }
+  75% {
+    border: unset;
+    box-shadow: unset;
+    animation-timing-function: step-end;
+  }
+  75% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1.8);
+  }
+  78% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1);
+  }
+  90% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+  }
+  94% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+  }
+}
+@keyframes ball3 {
+  10% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+    border: unset;
+  }
+  15% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+    border: unset;
+  }
+  25% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: unset;
+    border: unset;
+  }
+  30% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(0.8);
+    border: unset;
+    box-shadow: unset;
+  }
+  34% {
+    border-radius: 50%;
+    top: 170px;
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 10px rgb(24, 175, 185);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+    top: 170px;
+    transform: translate(-88px, 121px) scale(1.2);
+  }
+  70% {
+    border-radius: 50%;
+    background-color: transparent;
+    top: 170px;
+    transform: translate(0px, 0px) scale(1.2);
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+  }
+  75% {
+    border: unset;
+    box-shadow: unset;
+    animation-timing-function: step-end;
+  }
+  75% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1.8);
+  }
+  78% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1);
+  }
+  90% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+  }
+  94% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+  }
+}
+@keyframes ball4 {
+  10% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+    border: unset;
+  }
+  15% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+    border: unset;
+  }
+  25% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: unset;
+    border: unset;
+  }
+  30% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(0.8);
+    border: unset;
+    box-shadow: unset;
+  }
+  34% {
+    border-radius: 50%;
+    top: 170px;
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 10px rgb(24, 175, 185);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+    top: 170px;
+    transform: translate(88px, 121px) scale(1.2);
+  }
+  70% {
+    border-radius: 50%;
+    background-color: transparent;
+    top: 170px;
+    transform: translate(0px, 0px) scale(1.2);
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+  }
+  75% {
+    border: unset;
+    box-shadow: unset;
+    animation-timing-function: step-end;
+  }
+  75% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1.8);
+  }
+  78% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1);
+  }
+  90% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+  }
+  94% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+  }
+}
+@keyframes ball5 {
+  10% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+    border: unset;
+  }
+  15% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+    border: unset;
+  }
+  25% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: unset;
+    border: unset;
+  }
+  30% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(0.8);
+    border: unset;
+    box-shadow: unset;
+  }
+  34% {
+    border-radius: 50%;
+    top: 170px;
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 10px rgb(24, 175, 185);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+    top: 170px;
+    transform: translate(143px, -46px) scale(1.2);
+  }
+  70% {
+    border-radius: 50%;
+    background-color: transparent;
+    top: 170px;
+    transform: translate(0px, 0px) scale(1.2);
+    border: 5px solid rgb(120, 246, 255);
+    box-shadow: 0px 0px 10px rgb(87, 223, 233), 0px 0px 20px rgb(59, 194, 204),
+      0px 0px 50px rgb(24, 175, 185), inset 0px 0px 5px rgb(87, 223, 233),
+      inset 0px 0px 10px rgb(59, 194, 204), inset 0px 0px 15px rgb(24, 175, 185);
+  }
+  75% {
+    border: unset;
+    box-shadow: unset;
+    animation-timing-function: step-end;
+  }
+  75% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1.8);
+  }
+  78% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 170px;
+    transform: scale(1);
+  }
+  90% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: unset;
+  }
+  94% {
+    border-radius: 50%;
+    background-color: #4852da;
+    top: 440px;
+    transform: scale(1.2, 0.8);
+  }
+}
